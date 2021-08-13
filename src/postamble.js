@@ -192,6 +192,7 @@ function callMain(args) {
 #else
     // if we're not running an evented main loop, it's time to exit
     exit(ret, /* implicit = */ true);
+    return ret;
   }
   catch (e) {
     // Certain exception types we do not treat as errors since they are used for
